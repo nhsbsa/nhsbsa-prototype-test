@@ -1,30 +1,34 @@
-# NHS.UK prototype kit
+# NHS BSA Interview (Technical Test)
 
-Visit the <a href="http://nhsuk-prototype-kit.azurewebsites.net/docs">NHS.UK prototype kit site</a> to download the latest version and read the documentation.
+As part of your interview, we'd like to get a feel on your range of technical skills.
 
-## About the NHS.UK prototype kit
+## NHS.UK Prototype Kit
 
-The NHS.UK prototype kit enables you to make interactive prototypes that will look like pages on NHS.UK. The prototypes you make are a great way to show ideas to others and for conducting user research.
+Within the NHS, we do a lot of prototyping of our ideas. This is to discuss ideas more clearly amongst the team and to test our ideas with real people.
 
-## Security
+Prototyping reduces risk, development and maintenance costs by testing our assumptions and ideas early and often.
 
-If you publish your prototypes online, they must be protected by a <a href="http://nhsuk-prototype-kit.azurewebsites.net/docs/how-tos/heroku">username and password</a>. This is to prevent members of the public finding prototypes and thinking they are real services.
-
-You must protect user privacy at all times, even when using prototypes. Prototypes made with the kit look like NHS.UK, but do not have the same security provisions. Always make sure you are handling user data appropriately.
+The NHS.UK Prototype Kit provides a simple way to make interactive prototypes that look and feel like pages on NHS.UK using a range of HTML, SASS (which is used to generate CSS) and JavaScript.
 
 ## Installation instructions
+
+To install the prototype, please follow these instructions:
 
 - <a href="http://nhsuk-prototype-kit.azurewebsites.net/docs/install/simple">Install guide (non technical)</a>
 - <a href="http://nhsuk-prototype-kit.azurewebsites.net/docs/install/advanced">Developer friendly install guide (technical)</a>
 
-## Contribute
+## Scenario 1
 
-If you want to contribute to the NHS.UK prototype kit, by reporting bugs, fixing bugs, suggesting new features or writing documentation, then read our [contributing guidelines](CONTRIBUTING.md).
+You join a high profile NHS BSA agile project that is at the Private Beta stage. The service has a prototype that doesn’t use consistent, accessible patterns from the <a href="https://service-manual.nhs.uk/design-system">NHS Design System</a>. 
 
-## Development enviroment
+Your job is to identify what elements of the prototype are off pattern, and make the relevant changes to bring them back inline.
 
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/nhsuk/nhsuk-prototype-kit)
+## Scenario 2
 
-## Support
+Your new service has a simple user journey which collects a persons name, address and date of birth:
 
-The NHS.UK prototype kit is maintained by NHS Digital. [Email us](mailto:service-manual@nhs.net), open a [Github issue](https://github.com/nhsuk/nhsuk-prototype-kit/issues/new) or get in touch on the [NHS digital service manual Slack workspace](https://join.slack.com/t/nhs-service-manual/shared_invite/enQtNTIyOTEyNjU3NDkyLTk4NDQ3YzkwYzk1Njk5YjAxYTI5YTVkZmUxMGQ0ZjA3NjMyM2ZkNjBlMWMxODVjZjYzNzg1ZmU4MWY1NmE2YzE).
+![User flow of the user journey](https://user-images.githubusercontent.com/45825845/167927459-f499594e-74e3-4965-828d-639d4014e25f.png)
+
+Unfortunately, for some reason, your prototype doesn't go from the address page to the date of birth page.
+
+Your job is to debug why this might be and fix it so that it does.
