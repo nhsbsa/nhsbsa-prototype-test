@@ -37,7 +37,7 @@ router.post('/install/mac', (req, res) => {
 router.get('/download', (req, res) => {
   const { version } = packageJson;
   res.redirect(
-    `https://github.com/nhsuk/nhsuk-prototype-kit/archive/refs/tags/v${version}.zip`,
+    `https://github.com/nhsbsa/nhsbsa-prototype-test/archive/refs/heads/main.zip`,
   );
 });
 

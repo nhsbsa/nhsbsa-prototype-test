@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+What is your address?
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+        {{ backLink({
+            "href": "javascript:history.go(-1)",
+            "text": "Go back"
+        }) }}
+
+        <h1 class="nhsuk-fieldset__legend--xl">
+            What is your address?
+        </h1>
+
+        <form action="/Scenario-1/address" method="post">
+
+            <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="address">
+                  Address
+                </label>
+                <textarea class="nhsuk-textarea" id="address" name="address" rows="5"></textarea>
+            </div>
+
+            <details class="nhsuk-details">
+                <summary class="nhsuk-details__summary">
+                    <span class="nhsuk-details__summary-text">
+                        Why we ask for your address
+                    </span>
+                </summary>
+                <div class="nhsuk-details__text">
+                    <p>We use your address to send your wand, top hat and bunny rabbit.</p>                          
+                </div>
+            </details>
+
+            <button class="nhsuk-button" type="submit">
+                Continue
+            </button>
+
+        </form>
+
+    </div>
+</div>
+
+{% endblock %}

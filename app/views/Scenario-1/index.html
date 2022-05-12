@@ -1,0 +1,69 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+      <h1><span role="text">Apply to be a magician</h1>
+
+  </div>
+</div>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+      <p class="nhsuk-caption-l nhsuk-u-margin-bottom-5">
+        We're delighted you've decided to start the journey to becoming a magician.
+      </p>
+
+      <h2 class="nhsuk-heading-s">If you qualify you will get your:</h2>
+
+      <ul>
+          <li>own wand</li>
+          <li>top hat</li>
+          <li>bunny rabbit</li>
+      </ul>
+
+      <div class="nhsuk-inset-text nhsuk-u-margin-top-5 nhsuk-u-margin-bottom-5">
+          <span class="nhsuk-u-visually-hidden">Information:</span>
+          <p>Magicians must never reveal their secrets. If you do, you will be banished from the inner circle.</p>
+      </div>
+
+      <form action="/Scenario-1/start" method="post">
+        <button class="nhsuk-button nhsuk-button--secondary" type="submit">
+          Start now
+        </button>
+      </form>
+
+  </div>
+
+</div>
+
+
+{% endblock %}

@@ -4,19 +4,6 @@
   Developer friendly install guide - NHS.UK prototype kit
 {% endblock %}
 
-{% block beforeContent %}
-  {{ breadcrumb({
-    items: [
-      {
-        href: "/docs",
-        text: "Home"
-      }
-    ],
-    href: "/docs/install",
-    text: "Install"
-  }) }}
-{% endblock %}
-
 {% block content %}
   <div class="nhsuk-grid-row">
 
@@ -28,7 +15,7 @@
 
       <h2 class="nhsuk-u-padding-top-4">GitHub</h2>
 
-      <p><a href="https://github.com/nhsuk/nhsuk-prototype-kit">NHS.UK prototype kit GitHub repo</a>
+      <p><a href="https://github.com/nhsbsa/nhsbsa-prototype-test">NHS BSA prototype test kit GitHub repo</a>
       
       <h2>Requirements</h2>
 
@@ -38,27 +25,11 @@
 
       <pre class="app-pre"><code class="app-code">npm install</code></pre>
 
-      <h2 class="nhsuk-u-margin-top-7">Run the kit</h2>
+      <h2 class="nhsuk-u-margin-top-7">Run the prototype</h2>
 
       <pre class="app-pre"><code class="app-code">npm run watch</code></pre>
 
       <p>Go to <a href="http://localhost:3000">localhost:3000</a> in your browser.</p>
-
-      <div class="nhsuk-card">
-        <div class="nhsuk-card__content">
-
-          <h2>Getting started</h2>
-
-          <ul>
-            <li><a href="/docs/how-tos/making-pages">Making pages</a></li>
-            <li><a href="/docs/how-tos/adding-assets">Adding CSS, JavaScript and Images</a></li>
-            <li><a href="/docs/how-tos/components">Using components</a></li>
-          </ul>
-
-          <p>See all <a href="/docs/how-tos">how to guides</a></p>
-
-        </div>
-      </div>
 
       {{ backLink({
         "href": "/docs/install",

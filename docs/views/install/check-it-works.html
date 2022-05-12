@@ -4,19 +4,6 @@
   Check it works - NHS.UK prototype kit
 {% endblock %}
 
-{% block beforeContent %}
-  {{ breadcrumb({
-    items: [
-      {
-        href: "/docs",
-        text: "Home"
-      }
-    ],
-    href: "/docs/install",
-    text: "Install"
-  }) }}
-{% endblock %}
-
 {% block content %}
   <div class="nhsuk-grid-row">
 
@@ -57,11 +44,7 @@
 
       <h2>Installation complete</h2>
 
-      <p>The kit is now installed. Congratulations!</p>
-
-      <h2>Getting going</h2>
-
-      <p><a href="/docs/how-tos/making-pages">Start making pages</a></p>
+      <p>The prototype is now installed. Congratulations!</p>
 
       {% block pagination %}
       {% endblock %}

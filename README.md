@@ -1,4 +1,4 @@
-# NHS BSA Interview (Technical Test)
+# NHS BSA Designer Interview (Technical Test)
 
 As part of your interview, we'd like to get a feel on your range of technical skills.
 
@@ -8,14 +8,16 @@ Within the NHS, we do a lot of prototyping of our ideas. This is to discuss idea
 
 Prototyping reduces risk, development and maintenance costs by testing our assumptions and ideas early and often.
 
-The NHS.UK Prototype Kit provides a simple way to make interactive prototypes that look and feel like pages on NHS.UK using a range of HTML, SASS (which is used to generate CSS) and JavaScript.
+The NHS.UK Prototype Kit helps us by providing a simple way to make interactive prototypes that look and feel like pages on NHS.UK. To do this, the kit uses a range of HTML, SASS (which is used to generate CSS) and JavaScript.
 
 ## Installation instructions
 
-To install the prototype, please follow these instructions:
+To install this prototype, please follow these instructions:
 
-- <a href="http://nhsuk-prototype-kit.azurewebsites.net/docs/install/simple">Install guide (non technical)</a>
-- <a href="http://nhsuk-prototype-kit.azurewebsites.net/docs/install/advanced">Developer friendly install guide (technical)</a>
+### Step 1
+
+- <a href="http://nhsbsa-prototype-test.herokuapp.com/docs/install/simple">Install guide (non technical)</a>
+- <a href="http://nhsbsa-prototype-test.herokuapp.com/docs/install/advanced">Developer friendly install guide (technical)</a>
 
 ## Scenario 1
 
@@ -25,7 +27,7 @@ Your job is to identify what elements of the prototype are off pattern, and make
 
 ## Scenario 2
 
-Your new service has a simple user journey which collects a persons name, address and date of birth:
+Your new service has a simple user journey which collects a persons name, address and date of birth and submits them to your service:
 
 ![User flow of the user journey](https://user-images.githubusercontent.com/45825845/167927459-f499594e-74e3-4965-828d-639d4014e25f.png)
 

@@ -1,0 +1,120 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+Check your answers
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+        {{ backLink({
+            "href": "javascript:history.go(-1)",
+            "text": "Go back"
+        }) }}
+
+        <h1 class="nhsuk-u-margin-bottom-5">
+            Check your answers
+        </h1>
+
+        <dl class="nhsuk-summary-list">
+
+            {% if (data['firstname']) and (data['lastname']) %}
+            <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                    Name
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                    {{ data['firstname'] }} {{ data['lastname'] }}
+                </dd>
+
+                <dd class="nhsuk-summary-list__actions">
+
+                    <a href="/Scenario-1/name">
+                        Change<span class="nhsuk-u-visually-hidden"> your name</span>
+                    </a>
+
+                </dd>
+
+            </div>
+            {% endif %}
+
+            {% if (data['address']) %}
+            <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                    Address
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                    {{ data['address'] | replace('\n', '<br>') | safe }}
+                </dd>
+
+                <dd class="nhsuk-summary-list__actions">
+
+                    <a href="/Scenario-1/name">
+                        Change<span class="nhsuk-u-visually-hidden"> your address</span>
+                    </a>
+
+                </dd>
+
+            </div>
+            {% endif %}
+
+            {% if (data['addressline1']) and (data['towncity']) and (data['postcode']) %}
+            <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                    Address
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                    {{ data['addressline1'] }},<br>
+                    {% if data['addressline2'] %}{{ data['addressline2'] }},<br>{% endif %}
+                    {{ data['towncity'] }},<br>
+                    {{ data['postcode'] }}
+                </dd>
+
+                <dd class="nhsuk-summary-list__actions">
+
+                    <a href="/Scenario-1/name">
+                        Change<span class="nhsuk-u-visually-hidden"> your address</span>
+                    </a>
+
+                </dd>
+
+            </div>
+            {% endif %}
+
+            {% if (data['dateofbirthday']) and (data['dateofbirthmonth']) and (data['dateofbirthyear']) %}
+            <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                    Date of birth
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                    {{ data['dateofbirthday'] }} / {{ data['dateofbirthmonth'] }} / {{ data['dateofbirthyear'] }}
+                </dd>
+
+                <dd class="nhsuk-summary-list__actions">
+
+                    <a href="/Scenario-1/name">
+                        Change<span class="nhsuk-u-visually-hidden"> your date of birth</span>
+                    </a>
+
+                </dd>
+
+            </div>
+            {% endif %}
+        
+        </dl>
+
+        <form action="/Scenario-1/check-your-answers" method="post">
+            <button class="nhsuk-button" type="submit">
+                Confirm and send
+            </button>
+        </form>
+
+
+
+
+
+    </div>
+</div>
+
+{% endblock %}

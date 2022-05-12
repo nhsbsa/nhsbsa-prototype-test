@@ -1,20 +1,7 @@
 {% extends 'layout.html' %}
 
 {% block pageTitle %}
-  Run the kit - NHS.UK prototype kit
-{% endblock %}
-
-{% block beforeContent %}
-  {{ breadcrumb({
-    items: [
-      {
-        href: "/docs",
-        text: "Home"
-      }
-    ],
-    href: "/docs/install",
-    text: "Install"
-  }) }}
+  Run the prototype - NHS.UK prototype kit
 {% endblock %}
 
 {% block content %}
@@ -24,7 +11,7 @@
 
       <h1>
         <span class="nhsuk-caption-l">Step 7 of 8</span>
-        Run the kit
+        Run the prototype
       </h1>
 
       {% block branchingContent %}
@@ -32,7 +19,7 @@
 
       <pre class="app-pre"><code class="app-code">npm run watch</code></pre>
 
-      <p>After the kit has started, you should see a message telling you that the kit is running:</p>
+      <p>After the prototype has started, you should see a message telling you that the prototype is running:</p>
 
       {% block branchingImage %}
       {% endblock %}

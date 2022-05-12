@@ -33,57 +33,89 @@
 
       <!-- Change the page title here -->
       <h1>
-        NHS.UK prototype kit
-        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>
+        NHS BSA Design Interview
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom">(Technical Test)</span>
       </h1>
 
       <!-- Add your content here -->
       <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
 
       <p class="nhsuk-lede-text">
-        This kit lets you rapidly create HTML prototypes of NHS services.
+        As part of your interview, we'd like to get a feel on your range of technical skills.
       </p>
 
       <hr>
 
       <h2>
-        About this page
+        NHS.UK Prototype Kit
       </h2>
 
       <p>
-        Use this page as the index for your project.
+        Within the NHS, we do a lot of prototyping of our ideas. This is to discuss ideas more clearly amongst the team and to test our ideas with real people.
       </p>
       
       <p>
-        You'll find the code for this page at <strong>/app/views/index.html</strong>.
+        Prototyping reduces risk, development and maintenance costs by testing our assumptions and ideas early and often.
       </p>
 
       <p>
-        There is also an <a href="/page-example">example page</a>, which contains a selection of NHS.UK frontend styles and components.
+        The NHS.UK Prototype Kit provides a simple way to make interactive prototypes that look and feel like pages on NHS.UK using a range of HTML, SASS (which is used to generate CSS) and JavaScript.
       </p>
 
       <hr>
 
       <h2>
-        Get started
+        Scenario 1
       </h2>
 
-      <p>Get started by using the:</p>
+      <p>
+        You join a high profile NHS BSA agile project that is at the Private Beta stage. The service has a prototype that doesn’t use consistent, accessible patterns from the NHS Design System.
+      </p>
 
-      <ul>
-        <li>
-          <a href="/docs/how-tos">how to guides</a>
-        </li>
-        <li>
-          <a href="/docs/page-templates">page templates</a>
-        </li>
-        <li>
-          code snippets for styles and components from the <a href="https://service-manual.nhs.uk/design-system">NHS digital service manual</a>
-        </li>
-      </ul>
+      <p>
+        Your job is to identify what elements of the prototype are off pattern, and make the relevant changes to bring them back inline.
+      </p>
 
-      <!-- End of content -->
+      <a href="/Scenario-1" class="nhsuk-button nhsuk-u-margin-bottom-0">
+        Scenario 1
+      </a>
+
+      <hr>
+
+      <h2>
+        Scenario 2
+      </h2>
+
+      <p>
+        Your new service has a simple user journey which collects a persons name, address and date of birth:
+      </p>
 
     </div>
   </div>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <img class="app-img-guide nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-7" alt="Diagram of 6 pages connected together" src="/images/user-flow.png" />
+
+    </div>
+  </div>
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <p>
+        Unfortunately, for some reason, your prototype doesn't go from the address page to the date of birth page.
+      </p>
+      
+      <p>
+        Your job is to debug why this might be and fix it so that it does.
+      </p>
+
+      <a href="/Scenario-2" class="nhsuk-button nhsuk-u-margin-bottom-0">
+        Scenario 2
+      </a>
+
+    </div>
+  </div>
+
 {% endblock %}

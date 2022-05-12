@@ -4,19 +4,6 @@
   Download and decide where to keep your prototypes - NHS.UK prototype kit
 {% endblock %}
 
-{% block beforeContent %}
-  {{ breadcrumb({
-    items: [
-      {
-        href: "/docs",
-        text: "Home"
-      }
-    ],
-    href: "/docs/install",
-    text: "Install"
-  }) }}
-{% endblock %}
-
 {% block content %}
   <div class="nhsuk-grid-row">
 
@@ -32,15 +19,13 @@
       {% block branchingContent %}
       {% endblock %}
 
-      <h2>2. Download the kit</h2>
+      <h2>2. Download the prototype</h2>
 
-      <p>The simplest way to get the kit is to <a href="/docs/download" data-link="download">download it as a zip</a>.</p>
+      <p>The simplest way to get the prototype is to <a href="/docs/download" data-link="download">download it as a zip</a>.</p>
     
-      <p>You'll use a new copy of the kit for each new prototype you make. That way your prototypes don’t interfere with each other.</p>
+      <h2>3. Unzip the prototype</h2>
 
-      <h2>3. Unzip the kit</h2>
-
-      <p>Unzip the kit you downloaded - you should end up with a folder called <strong>nhsuk-prototype-kit</strong> followed by the version number.</p>
+      <p>Unzip the prototype you downloaded - you should end up with a folder called <strong>nhsbsa-prototype-test.main</strong>.</p>
 
       {% block branchingContentTwo %}
       {% endblock %}
@@ -51,7 +36,7 @@
       
       <p>For this guide, call the folder:</p>
 
-      <p><strong>find-a-pharmacy</strong></p>
+      <p><strong>nhsbsa-interview</strong></p>
 
       {% block branchingContentThree %}
       {% endblock %}
