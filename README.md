@@ -19,6 +19,9 @@ To install this prototype, please follow these instructions:
 - <a href="http://nhsbsa-prototype-test.herokuapp.com/docs/install/simple">Install guide (non technical)</a>
 - <a href="http://nhsbsa-prototype-test.herokuapp.com/docs/install/advanced">Developer friendly install guide (technical)</a>
 
+Username: NHSBSA
+Password: DESIGN-INTERVIEW
+
 ## Scenario 1
 
 You join a high profile NHS BSA agile project that is at the Private Beta stage. The service has a prototype that doesn’t use consistent, accessible patterns from the <a href="https://service-manual.nhs.uk/design-system">NHS Design System</a>. 

@@ -111,8 +111,8 @@ router.post('/Scenario-2/address', function (req, res) {
     var towncity = req.session.data['towncity']
     var postcode = req.session.data['postcode'].replace(/\s+/g, '').toUpperCase()
   
-    if (addressline1 && towncity && postcode) {
-      res.redirect('/Scenario-2/date-of-birth')
+    if (addressline1 && towncity && postcode1) {
+      res.redirect('/Scenario-2/address')
     } else {
       res.redirect('/Scenario-2/address')
     }
