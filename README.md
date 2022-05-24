@@ -24,16 +24,19 @@ Password: DESIGN-INTERVIEW
 
 ## Scenario 1
 
-You join a high profile NHS BSA agile project that is at the Private Beta stage. The service has a prototype that doesn’t use consistent, accessible patterns from the <a href="https://service-manual.nhs.uk/design-system">NHS Design System</a>. 
+You join a high profile NHS BSA agile project that is at the Private Beta stage.
 
-Your job is to identify what elements of the prototype are off pattern, and make the relevant changes to bring them back inline.
+Your new service has a simple user journey which collects a persons name, address and date of birth and allows them to apply to be a magician:
+
+![User flow of the user journey](https://user-images.githubusercontent.com/45825845/170073955-d4b03908-d03d-45e2-bf39-b9ec21b7ee83.png)
+
+The prototype has a number of issues:
+
+1. It doesn’t use consistent, accessible patterns from the <a href="https://service-manual.nhs.uk/design-system">NHS Design System</a>.
+2. The prototype doesn't go from the address page to the date of birth page.
+
+Your job is to identify what elements of the prototype are off pattern, and what is stopping the prototype from working, and make the relevant changes.
 
 ## Scenario 2
 
-Your new service has a simple user journey which collects a persons name, address and date of birth and submits them to your service:
-
-![User flow of the user journey](https://user-images.githubusercontent.com/45825845/167927459-f499594e-74e3-4965-828d-639d4014e25f.png)
-
-Unfortunately, for some reason, your prototype doesn't go from the address page to the date of birth page.
-
-Your job is to debug why this might be and fix it so that it does.
+TBC

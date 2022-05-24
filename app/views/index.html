@@ -62,22 +62,28 @@
         The NHS.UK Prototype Kit provides a simple way to make interactive prototypes that look and feel like pages on NHS.UK using a range of HTML, SASS (which is used to generate CSS) and JavaScript.
       </p>
 
-      <h3>
-        Installation instructions
-      </h3>
-
-      <p>
-        To install this prototype, please follow these instructions:
-      </p>
-
-      <ul>
-        <li>
-          <a href="/docs/install/simple">Install guide (non technical)</a>
-        </li>
-        <li>
-          <a href="/docs/install/advanced">Developer friendly install guide (technical)</a>
-        </li>
-      </ul>
+      <details class="nhsuk-details">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text">
+            Installation instructions
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <p>
+            To install this prototype, please follow these instructions:
+          </p>
+    
+          <ul>
+            <li>
+              <a href="/docs/install/simple">Install guide (non technical)</a>
+            </li>
+            <li>
+              <a href="/docs/install/advanced">Developer friendly install guide (technical)</a>
+            </li>
+          </ul>
+      
+        </div>
+      </details>
 
       <hr>
 
@@ -86,11 +92,39 @@
       </h2>
 
       <p>
-        You join a high profile NHS BSA agile project that is at the Private Beta stage. The service has a prototype that doesn’t use consistent, accessible patterns from the NHS Design System.
+        You join a high profile NHS BSA agile project that is at the Private Beta stage.
       </p>
 
       <p>
-        Your job is to identify what elements of the prototype are off pattern, and make the relevant changes to bring them back inline.
+        Your new service has a simple user journey which collects a persons name, address and date of birth and allows them to apply to be a magician:
+      </p>
+
+    </div>
+  </div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <img class="app-img-guide nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-7" alt="Diagram of 6 pages connected together" src="/images/user-flow.svg" />
+
+  </div>
+</div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+
+      <p>
+        The prototype has a number of issues:
+      </p>
+
+      <ol>
+        <li>It doesn’t use consistent, accessible patterns from the <a href="https://service-manual.nhs.uk/design-system">NHS Design System</a>.</li>
+        <li>The prototype doesn't go from the address page to the date of birth page.</li>
+      </ol>
+
+      <p>
+        Your job is to identify what elements of the prototype are off pattern and what is stopping the prototype from working, and make the relevant changes.
       </p>
 
       <a href="/Scenario-1" class="nhsuk-button nhsuk-u-margin-bottom-0">
@@ -104,31 +138,10 @@
       </h2>
 
       <p>
-        Your new service has a simple user journey which collects a persons name, address and date of birth:
+        TBC
       </p>
 
-    </div>
-  </div>
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-full">
-
-      <img class="app-img-guide nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-7" alt="Diagram of 6 pages connected together" src="/images/user-flow.png" />
-
-    </div>
-  </div>
-
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-two-thirds">
-
-      <p>
-        Unfortunately, for some reason, your prototype doesn't go from the address page to the date of birth page.
-      </p>
-      
-      <p>
-        Your job is to debug why this might be and fix it so that it does.
-      </p>
-
-      <a href="/Scenario-2" class="nhsuk-button nhsuk-u-margin-bottom-0">
+      <a disabled href="/Scenario-2" class="nhsuk-button nhsuk-u-margin-bottom-0">
         Scenario 2
       </a>
 
