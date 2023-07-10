@@ -9,9 +9,9 @@ What is your date of birth?
   <div class="nhsuk-grid-column-two-thirds">
 
     {{ backLink({
-            "href": "javascript:history.go(-1)",
-            "text": "Go back"
-        }) }}
+    "href": "javascript:history.go(-1)",
+    "text": "Go back"
+    }) }}
 
 
     <form action="/Scenario-1/date-of-birth" method="post">
@@ -21,21 +21,21 @@ What is your date of birth?
 
           <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xl">
             <h1 class="nhsuk-fieldset__heading">
-              What is your date of birth?
+              Date of birth
             </h1>
           </legend>
-          <span class="nhsuk-hint" id="hint">
-            For example, 15 3 1984
+          <span class="nhsuk-hint" id="hint" style="font-style: italic;">
+            For example, 1984 3 15
           </span>
 
           <div class="nhsuk-date-input">
             <div class="nhsuk-date-input__item">
               <div class="nhsuk-form-group">
-                <label class="nhsuk-label nhsuk-date-input__label" for="dateofbirthday">
-                  Day
+                <label class="nhsuk-label nhsuk-date-input__label" for="dateofbirthyear">
+                  Year
                 </label>
-                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="dateofbirthday"
-                  name="dateofbirthday" type="number" pattern="[0-9]*">
+                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="dateofbirthyear"
+                  name="dateofbirthyear" type="number" pattern="[0-9]*">
               </div>
             </div>
             <div class="nhsuk-date-input__item">
@@ -49,30 +49,76 @@ What is your date of birth?
             </div>
             <div class="nhsuk-date-input__item">
               <div class="nhsuk-form-group">
-                <label class="nhsuk-label nhsuk-date-input__label" for="dateofbirthyear">
-                  Year
+                <label class="nhsuk-label nhsuk-date-input__label" for="dateofbirthday">
+                  Day
                 </label>
-                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="dateofbirthyear"
-                  name="dateofbirthyear" type="number" pattern="[0-9]*">
+                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="dateofbirthday"
+                  name="dateofbirthday" type="number" pattern="[0-9]*">
               </div>
             </div>
           </div>
+
+          <br><br>
+
+          <details class="nhsuk-details">
+            <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">
+                Why we ask for your date of birth
+              </span>
+            </summary>
+            <div class="nhsuk-details__text">
+              <p>We use this to work out your age and check if your are old enough to be a magician.</p>
+            </div>
+          </details>
+
+          <br><br>
+
+          <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--xl">
+            <h1 class="nhsuk-fieldset__heading">
+              Contact details
+            </h1>
+          </legend>
+
+          <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+            <h1 class="nhsuk-fieldset__heading">
+              How would you like to be contacted?
+            </h1>
+          </legend>
+
+          <div class="nhsuk-hint" id="example-hint">
+            Select all options that are relevant to you.
+          </div>
+
+          <div class="nhsuk-checkboxes">
+
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                Email
+              </label>
+            </div>
+
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+                Phone
+              </label>
+            </div>
+
+            <div class="nhsuk-checkboxes__item">
+              <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+              <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+                Text message
+              </label>
+            </div>
+
+          </div>
+
         </fieldset>
 
       </div>
 
-      <details class="nhsuk-details">
-        <summary class="nhsuk-details__summary">
-          <span class="nhsuk-details__summary-text">
-            Why we ask for your date of birth
-          </span>
-        </summary>
-        <div class="nhsuk-details__text">
-          <p>We use this to work out your age and check if your are old enough to be a magician.</p>
-        </div>
-      </details>
-
-      <button class="nhsuk-button" type="submit">
+      <button class="nhsuk-button nhsuk-button--secondary" type="submit">
         Continue
       </button>
 
