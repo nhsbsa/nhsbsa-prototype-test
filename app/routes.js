@@ -37,12 +37,15 @@ router.post('/Scenario-1/name', function (req, res) {
 
 // What is your address?
 
-router.post('/Scenario-1/find-address', function (req, res) {
+// router.post('/Scenario-1/find-address', function (req, res) {
+router.post('/Scenario-1/address', function (req, res) {
+
   
     var address = req.session.data['address']
   
     if (address) {
-      res.redirect('/Scenario-1/address')
+      // res.redirect('/Scenario-1/address')
+      res.redirect('/Scenario-1/date-of-birth')
     } else {
       res.redirect('/Scenario-1/address')
     }
